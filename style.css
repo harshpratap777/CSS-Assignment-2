@@ -1,0 +1,238 @@
+/* Royal Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 10px double goldenrod;
+    background-image: url("./bg4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    color: #3b1a00;
+}
+
+/* Header */
+#heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px;
+}
+
+a {
+    color: #ffd700;
+}
+
+#heading-1, #heading-2, #heading-3, #home {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ffd700;
+    border: 4px solid maroon;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#heading-1 { width: 300px; font-size: 2rem; }
+#heading-2 { width: 400px; font-size: 1.8rem; }
+#heading-3 { width: 300px; font-size: 1.5rem; }
+#home { font-size: 1.5rem; }
+
+#heading-1:hover, #heading-2:hover, #heading-3:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 30px gold;
+}
+
+/* Offer Circle */
+#excoffer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px 20px;
+}
+
+#offer {
+    height: 400px;
+    width: 400px;
+    border: 5px dotted goldenrod;
+    border-radius: 50%;
+    background-color: #fff4d4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+}
+
+.p1, .p2, .p3 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: maroon;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+/* Registration Form */
+#regoffer {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 6px dashed gold;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+}
+
+#regh1 {
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.6rem;
+    color: maroon;
+    margin-bottom: 20px;
+}
+
+.form-details {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #8b0000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.details, .date {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    padding: 10px;
+    border: 2px solid maroon;
+    border-radius: 8px;
+    width: 70%;
+    font-size: 1rem;
+}
+
+.check, #click, #reset {
+    margin: 15px auto;
+    display: block;
+    padding: 10px 30px;
+    border: none;
+    background-color: maroon;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#click:hover, #reset:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+/* Menu Title */
+#menu {
+    background-color: black;
+    color: gold;
+    border: 6px double maroon;
+    border-radius: 25px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto 30px auto;
+    box-shadow: 0 0 25px goldenrod;
+}
+
+/* Menu Items */
+.menu1, .menu2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 20px;
+}
+
+.box1, .box2 {
+    background-color: #fffef5;
+    border: 4px solid goldenrod;
+    border-radius: 20px;
+    padding: 20px;
+    width: 25%;
+    min-width: 240px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.box1:hover, .box2:hover {
+    transform: scale(1.05);
+    background-color: #fff2d4;
+}
+
+.food {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: maroon;
+    margin-bottom: 10px;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+li {
+    font-size: 1.1rem;
+    margin: 6px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #heading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1, .box2 {
+        width: 80%;
+    }
+
+    #heading-1, #heading-2, #heading-3 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #menu {
+        font-size: 1.4rem;
+    }
+
+    .food {
+        font-size: 1.3rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+        width: 90%;
+    }
+}
