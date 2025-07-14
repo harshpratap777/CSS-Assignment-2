@@ -23,10 +23,6 @@ To create a structured and visually appealing layout that includes:
 
 ---
 
-## 📁 Project Structure
-
----
-
 ## 🧠 Key CSS Concepts Practiced
 
 | Concept              | Description |
